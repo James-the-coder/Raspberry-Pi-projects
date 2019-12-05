@@ -1,3 +1,7 @@
+Weather program storage
+
+
+small sample of data
 
 
 
@@ -15,10 +19,7 @@
 
 
 
-
-
-
-
+pressure,humidity,temperature
 
 
 
