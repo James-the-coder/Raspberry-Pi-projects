@@ -3,7 +3,7 @@ import time
 
 import pygame
 
-
+#assigning variables
 sense = SenseHat()
 sense.clear()
 pressure = sense.get_pressure()
@@ -99,21 +99,12 @@ try:
    
 
         data = new_pressure, new_humid, new_temp
-
+        #saveFile is the variable used to store my data
         saveFile = open("/home/pi/Documents/Sense hat/Weather data/Data.txt", "a")
         saveFile.write("\n")
         saveFile.write(str(data))
         saveFile.close()
-        #if temp >= 20:
-            #sense.show_message((str(temp)+"C"), scroll_speed = 0.08, text_colour=[255,99,71])
-        #elif temp >=15:
-            #sense.show_message((str(temp)+"C"), scroll_speed = 0.08, text_colour=[124,252,0])
-       # elif temp <5 or 5:
-            #sense.show_message((str(temp)+"C"), scroll_speed = 0.08, text_colour=[0,255,255])
-        #time.sleep(1)
-        #sense.show_message((str(humid)+"%"), scroll_speed = 0.08)
-        #time.sleep(1)
-        #sense.show_message((str(pressure)+"MB"), scroll_speed = 0.08)
+        
 except KeyboardInterrupt:
     sense.clear()
     pygame.quit()
