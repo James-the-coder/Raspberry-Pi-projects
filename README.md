@@ -17,3 +17,7 @@ I used an initio kit which contained:
 Weather project
 I used:
 -a sense hat
+
+Light Therapy Project:
+I used:
+-an LED strip that would cycle through colours for a specific amount of time then stop
